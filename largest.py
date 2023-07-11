@@ -6,6 +6,7 @@ def large(a,b,c):
         print(b)
     }
     else:
-        return c;
+        print(c);
 
-print(large(45,82,56))
+large(45,82,94)
+

@@ -67,6 +67,14 @@ def exit_whatsapp_desktop():
     except Exception as e:
         print(f"Error while closing WhatsApp Desktop: {e}")
 
+def open_chrome():
+    chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+    try:
+        os.startfile(chrome_path)
+        print("Opening chrome")
+    except FileNotFoundError:
+        print("chrome not installed")
+
 def search_wikipedia(query):
     """Search Wikipedia and return results."""
     speak("Searching Wikipedia...")
@@ -155,6 +163,9 @@ if __name__ == "__main__":
 
         elif "open youtube" in query:
             open_youtube_in_chrome()
+        
+        elif "open chrome" in query:
+            open_chrome()
 
         else:
             # Use OpenAI for handling general queries

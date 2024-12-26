@@ -11,7 +11,7 @@ import webbrowser
 engine = pyttsx3.init()
 
 # OpenAI API Key
-openai.api_key = ""
+openai.api_key = "****"
 
 def speak(audio):
     """Convert text to speech."""
